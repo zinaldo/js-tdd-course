@@ -1,0 +1,23 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "JS with TDD in practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zinaldo/js-tdd-course.git"
+  },
+  "keywords": [
+    "js",
+    "tdd"
+  ],
+  "author": "Zinaldo Barros <zinaldo@gmail.com> (https://www.fastzina.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zinaldo/js-tdd-course/issues"
+  },
+  "homepage": "https://github.com/zinaldo/js-tdd-course#readme"
+}
