@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>03 - Scope</head>
+  <body></body>
+  <script>
+
+    const secretNumber = 28;
+
+    const will = {
+      name: 'Will',
+      age: 53
+    };
+
+    Object.freeze(will);
+
+    console.log(will);
+
+    will.age = 26;
+
+    console.log(will);
+
+  </script>
+</html>
