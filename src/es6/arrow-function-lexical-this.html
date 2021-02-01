@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Function and Lexixal This</title></head>
+  <body>
+    <button id="btn">Click Me!</button>
+  </body>
+  <script>
+
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', () => {
+      console.log(this);
+    })
+  </script>
+</html>

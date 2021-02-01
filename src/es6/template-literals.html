@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Template Literals</title></head>
+  <body></body>
+  <script>
+
+    const article = {
+      title: 'Aprendendo Template Strings',
+      intro: 'Um breve explicação ...',
+      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel odio ultrices, sollicitudin enim in, convallis risus. Nulla ac metus diam. Mauris leo quam, pretium sit amet suscipit in, maximus consequat nibh. Suspendisse quis mollis turpis. Integer ut turpis eu purus sodales pharetra ut vitae arcu. Nam ut magna id lectus varius auctor at ut felis.',
+      tags: ['es6', 'js', 'template-literal']
+    }
+
+    function renderAuthor(name) {
+      return name ? name : 'unknown';
+    }
+
+    const markup = `
+        <article>
+          <header>
+            <h1>${article.title}</h1>
+          </header>
+          <section>
+            <p>${article.intro}</p>
+          </section>
+          <footer>
+            <ul>
+              ${article.tags.map(tag => `<li>${tag}</li>`).join('')}
+            </ul>
+            <p>Author: ${renderAuthor(article.name)}</p>
+          </footer>
+        </article>
+    `;
+
+    document.body.innerHTML = markup;
+  </script>
+</html>

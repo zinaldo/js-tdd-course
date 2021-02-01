@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Destructuring</title></head>
+  <body>
+
+  </body>
+  <script>
+
+    let data = {
+      name: 'Zinaldo',
+      surname: 'Barros',
+      age: 38,
+      blog: 'www.fastzina.com',
+      social: {
+        twitter: '@fastzina',
+        facebook: '/fastzina'
+      }
+    }
+
+    // const {name, surname} =  data;
+    // console.log(name)
+    // console.log(surname);
+
+    const {facebook, twitter} = data.social;
+    console.log(facebook);
+    console.log(twitter);
+
+    const {facebook: fb} = data.social;
+    console.log(fb);
+
+    const {city = 'Recife', name = 'Zina'} = data;
+    console.log(city);
+
+    const arr = ['Zinaldo', 'Barros', 38, 'Recife'];
+    const [firstName, secondName, age, hometown] = arr;
+    console.log(firstName);
+    console.log(secondName);
+    console.log(age);
+    console.log(hometown);
+
+    // swapping
+
+    let a = 42;
+    let b = 21;
+
+    console.log('a: ', a);
+    console.log('b: ', b);
+
+    [a, b] = [b, a];
+
+    console.log('a: ', a);
+    console.log('b: ', b);
+
+
+  </script>
+</html>
