@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head><title>Rest Params</title></head>
+  <body>
+
+  </body>
+  <script>
+
+    function multiply(mult, ...args) {
+      return args.map(arg => arg * mult);
+    }
+
+    console.log(multiply(2, 1, 2, 3));
+  </script>
+</html>
